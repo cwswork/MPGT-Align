@@ -1,7 +1,7 @@
-# RPR-RHGT
+# MPGT-Align
 
-Source code and datasets for 2022 paper: 
-[***Entity Alignment with Reliable Path Reasoning and Relation-aware Heterogeneous Graph Transformer***]
+Source code and datasets for 2024 paper: 
+[***MPGT-Align: Multi-hop Pruning-based Graph Transformer for Unsupervised Entity Alignment in Large Knowledge Graphs***]
 
 ## Datasets
 
@@ -21,14 +21,11 @@ Take the dataset EN_DE(V1) as an example, the folder "pre " of main datasets con
 * kgs_num: statistics of the number of entities, relations, attributes, and attribute values;
 * entity_embedding.out: the input entity name feature matrix initialized by word vectors;
 
-The folder "pre " of path datasets contains:
-* path_neigh_dict: Path and its associated head and tail entities;
-* rpath_sort_dict: Paths and their frequency numbers;
 
 ## Environment
 
-* Python>=3.7
-* pytorch>=1.7.0
+* Python>=3.10
+* pytorch>=1.9.0
 * tensorboardX>=2.1.0
 * Numpy
 * json
@@ -36,11 +33,11 @@ The folder "pre " of path datasets contains:
 
 ## Running
 
-To run RPR-RHGT model on WN31-15K and DBP-15K, use the following script:
+To run MPGT-Align model on DBP-15K, use the following script:
 ```
 python3 align/exc_plan.py
 ```
-To run RPR-RHGT model DWY100K, use the following script:
+To run MPGT-Align model DWY100K, use the following script:
 ```
 python3 align100K/exc_plan100K.py
 ```
@@ -52,5 +49,7 @@ python3 align100K/exc_plan100K.py
 
 If you use this model or code, please cite it as follows:
 
-*Weishan Cai, Wenjun Ma, Jieyu Zhan, and Yuncheng Jiang*, 
-“Entity Alignment with Reliable Path Reasoning and Relation-aware Heterogeneous Graph Transformer”. In [Proceedings of the 31st International Joint Conference on Artificial Intelligence and the 25th European Conference on Artificial Intelligence (IJCAI-ECAI 2022)](https://ijcai-22.org/main-track-accepted-papers/)
+*Weishan Cai, Ruqi Zhou, Wenjun Ma*, 
+“MPGT-Align: Multi-hop Pruning-based Graph Transformer for Unsupervised Entity Alignment in Large Knowledge Graphs”. In ...
+
+
